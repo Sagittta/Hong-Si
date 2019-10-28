@@ -1,0 +1,51 @@
+@font-face { font-family: 'GyeonggiBatang'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; }
+
+body {
+  font-family: 'GyeonggiBatang';
+  background-color: #AEF359;
+  /* padding-top: 10%; */
+}
+
+#topMenu {
+  height: 30px;
+  width: 1070px;
+  padding-top: 30px;
+}
+#topMenu ul {
+  list-style: none;
+}
+/* li 태그 스타일 지정 */
+#topMenu ul li {
+  position: relative;
+  color: white;
+  float: left;                /* 가로로 나오도록 함 */
+  line-height: 30px;          /* 글씨 가운데 오도록 -> 높이 지정 */
+  vertical-align: middle;     /* 세로 가운데 정렬 */
+  text-align: center;         /* 글씨 가운데 정렬 */
+  background-color: #956848;
+}
+#topMenu ul li:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -30px;   left: 80px;
+  background: url('../img/hong-si-menu.png') no-repeat 50% 50% / contain;
+}
+/* menuLink 클래스 태그 스타일 지정 */
+#topMenu .menuLink {
+  text-decoration:none;     /* 밑줄 없앰 */
+  color: white;
+  display: block;           /* 전체 영역 클릭 시에도 링크 넘어감 */
+  width: 200px;             /* 영역 설정 */
+  font-size: 16px;
+  font-weight: bold;
+}
+/* menuLink 클래스 태그 호버 스타일 지정 */
+#topMenu .menuLink:hover {
+  color: yellow;
+  background-color: #4d4d4d;
+}
